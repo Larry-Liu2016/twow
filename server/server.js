@@ -15,6 +15,6 @@ io.on('connection', (socket) => {
   console.log('New user connected');
 });
 
-server.listen(port, () => {
+server.listen(port, '0.0.0.0', () => {
   console.log(`Server is up on ${port}`);
 });
